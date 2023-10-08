@@ -1,0 +1,83 @@
+%% Main File
+\documentclass{article}
+\usepackage{style} % Required for inserting images
+
+\chead{Zweck}
+\lhead{Name}
+\rhead{\today}
+\cfoot{\thepage\ / \pageref{LastPage}}
+
+\begin{document}
+\section{Aufgabe N}
+\lipsum[1]
+\newline
+\texttt{tcolorbox}:
+\begin{tcolorbox}[colback=red!5!white,colframe=red!60!black,title=Überschrift]
+    Inhalt
+\end{tcolorbox}
+\texttt{hyperref}: \href{https://overleaf.com/}{Overleaf Url}
+\newline
+$a^2 + b^2 = c^2$
+$$a^2 + b^2 = c^2$$
+\\
+\texttt{amsfonts}:
+\begin{itemize}
+    \item \texttt{mathbb} $\mathbb{N}$ (natürliche Zahlen), $\mathbb{Z}$ (ganze Zahlen), $\mathbb{R}$ (reelle Zahlen) und $\mathbb{C}$ (komplexe Zahlen)
+    \item \texttt{mathfrak} $\mathfrak{g}$ eine Frakturkleinbuchstabe "g" dar.
+\end{itemize}
+\texttt{amssymb}:
+\begin{itemize}
+    \item $\in$ für "Element von", $\forall$ für "für alle" und $\exists$ für "es gibt".
+    \item  $\emptyset$ für die leere Menge, $\subset$ für "ist eine Teilmenge von" und $\cup$ und $\cap$ für Vereinigung bzw. Schnittmenge.
+    \item  $\neg$ für "nicht", $\wedge$ für "und" und $\vee$ für "oder".
+    \item $\rightarrow$ für "impliziert" und $\leftrightarrow$ für "wenn und nur wenn".
+\end{itemize}
+\texttt{amsthm}:
+\begin{theorem}
+Theorem.
+\end{theorem}
+\begin{lemma}
+Lemma
+\end{lemma}
+\begin{definition}
+Definition
+\end{definition}
+\begin{example}
+Beispiel
+\end{example}
+\section{}
+\begin{theorem}
+Theorem.
+\end{theorem}
+\begin{lemma}
+Lemma
+\end{lemma}
+\begin{definition}
+Definition
+\end{definition}
+\begin{example}
+Beispiel
+\end{example}
+
+\lipsum[1]
+\texttt{algorithm \& algpseudocodex}:
+\begin{algorithm}
+\caption{Berechnung der Summe der ersten $n$ natürlichen Zahlen}
+\begin{algorithmic}[1]
+\Procedure{SummeDerErstenN}{n}
+    \State $sum \gets 0$
+    \For{$i \gets 1$ \textbf{to} $n$}
+        \State $sum \gets sum + i$
+    \EndFor
+    \State \textbf{return} $sum$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+\begin{algorithmic}[1]
+\State $n \gets 5$
+\State $ergebnis \gets$ \Call{SummeDerErstenN}{$n$}
+\State \textbf{Ausgabe} "Die Summe der ersten $n$ natürlichen Zahlen ist $ergebnis$."
+\end{algorithmic}
+\end{algorithm}
+\end{document}

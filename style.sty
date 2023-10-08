@@ -1,0 +1,56 @@
+%% Style File
+%% Template related packages, see documentation ...
+
+%% www.ctan.org/pkg/amsmath
+\usepackage{amsmath}
+
+%% www.ctan.org/pkg/amsfonts
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%% www.ctan.org/pkg/amsthm
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}[section] 
+\newtheorem{example}{Example}[section] 
+
+%% www.ctan.org/pkg/geometry
+\usepackage[margin=.9in]{geometry}
+
+%% www.ctan.org/pkg/algpseudocodex
+\usepackage{algpseudocodex}
+\usepackage{algorithm}
+
+%% www.ctan.org/pkg/hyperref
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=red,
+    citecolor=green
+}
+
+%% www.ctan.org/pkg/fancyhdr
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\setlength{\headheight}{13pt}
+
+%% www.ctan.org/pkg/datetime2
+\usepackage{datetime2}
+\DTMsetstyle{ddmmyyyy}
+
+%% www.ctan.org/pkg/tcolorbox
+\usepackage{tcolorbox}
+
+%% www.ctan.org/pkg/pgf
+\usepackage{tikz}
+
+%% www.ctan.org/pkg/titlesec
+\usepackage{titlesec}
+\titleformat{name=\section}[block]{\normalfont\Large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+%% www.ctan.org/pkg/lipsum
+\usepackage{lipsum}
+\endinput
